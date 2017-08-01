@@ -1,0 +1,15 @@
+<!DOCTYPE holiday [
+    <!ELEMENT holiday (departureDate,arrivalDate,countriesToVisit)>
+    <!ELEMENT country (name,capital,topSightsToSee)>
+    <!ELEMENT sight (name,location,url)>
+    <!ELEMENT countriesToVisit (country*)>
+    <!ELEMENT topSightsToSee (sight*)>
+    <!ELEMENT departureDate (#PCDATA)>
+    <!ELEMENT arrivalDate (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT capital (#PCDATA)>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+
+    <!ATTLIST holiday isDelayed CDATA "yes|no">
+]>
